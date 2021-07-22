@@ -1,0 +1,181 @@
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="card card-farmer-stats mb-5">
+          <div class="card-farmer-stats-mt">
+            <div class="card-body pl-0 min-width-zero">
+              <div class="min-width-zero">
+                <p class="list-item-heading mb-1 truncate p-farmer-text">
+                  Farmer
+                </p>
+                <p class="mb-2 text-muted text-small p-farmers-number">
+                  38.630
+                </p>
+
+                <p class="list-item-heading mb-1 truncate p-farmer-active-text">
+                  Active
+                </p>
+                <p class="mb-2 text-muted text-small p-farmers-active-number">
+                  27.565
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-2 list-thumbnail-letters">
+            <img
+              class="img-farmer"
+              src="../../../../assets/icons/farmer-vector.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="card card-mapping-stats">
+          <div class="card-mapping-stats-mt">
+            <div class="card-body min-width-zero">
+              <div class="min-width-zero">
+                <p class="list-item-heading mb-1 truncate p-mapping-text">
+                  Mapping
+                </p>
+                <p class="mb-2 text-muted text-small p-mapping-number">
+                  109.67 Ha
+                </p>
+
+                <p class="list-item-heading mb-1 truncate p-exploiting-text">
+                  Exploiting
+                </p>
+                <p class="mb-2 text-muted text-small p-exploiting-number">
+                  83.12 Ha
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-2 align-self-center list-thumbnail-letters">
+            <img
+              class="img-farmer"
+              src="../../../../assets/icons/ic_map.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="card mb-4 card-farmers-gender-piechart">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-12 mb-5">
+                <h6 class="mb-4 h6-gender-distribution-text">
+                  Gender distribution
+                </h6>
+                <div class="chart-container chart chart-distribution">
+                  <app-pie-chart
+                    [shadow]="true"
+                    [options]="chartDataConfig.pieChartOptions"
+                    [data]="pieChartData"
+                  ></app-pie-chart>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+        <div class="card">
+          <div class="card-body">
+            <h6 class="mb-4 h6-age-gender-text">
+              Age and gender distribution
+
+              <div class="form-group mb-3 div-date">
+                <input
+                  class="form-control"
+                  #drp="bsDaterangepicker"
+                  bsDaterangepicker
+                  [container]="'html'"
+                  [(ngModel)]="bsRangeValue"
+                />
+                <i class="simple-icon-calendar"></i>
+              </div>
+            </h6>
+            <div class="chart-container chart">
+              <app-bar-chart
+                [shadow]="true"
+                [options]="chartDataConfig.barChartOptions"
+                [data]="barChartData"
+              ></app-bar-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+        <div class="card card-farmers-distribution">
+          <div class="card-body">
+            <h6 class="mb-4 h6-age-gender-text">
+              Farmer distribution over cities
+
+              <div class="form-group mb-3 div-date">
+                <input
+                  class="form-control"
+                  #drp="bsDaterangepicker"
+                  bsDaterangepicker
+                  [container]="'html'"
+                  [(ngModel)]="bsRangeValue"
+                />
+                <i class="simple-icon-calendar"></i>
+              </div>
+            </h6>
+            <div class="chart-container chart">
+              <app-series-chart></app-series-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4">
+                <h6 class="mb-4">Verified profile</h6>
+                <h1 class="h1-profile-stat">
+                  <p>13.865</p>
+                  <p class="text-muted text-small">farmers</p>
+                  <span><i class="simple-icon-arrow-up"></i></span>
+                </h1>
+              </div>
+              <div class="col-4">
+                <h6 class="mb-4">Unverified profile</h6>
+                <h1 class="h1-profile-stat">
+                  <p>09.865</p>
+                  <p class="text-muted text-small">farmers</p>
+                  <span><i class="simple-icon-arrow-down icon-red"></i></span>
+                </h1>
+              </div>
+              <div class="col-4">
+                <h6 class="mb-4">Flagged profile</h6>
+                <h1 class="h1-profile-stat">
+                  <p>01.865</p>
+                  <p class="text-muted text-small">farmers</p>
+                  <span><i class="simple-icon-arrow-up"></i></span>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

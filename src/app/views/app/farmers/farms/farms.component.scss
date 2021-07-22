@@ -1,0 +1,48 @@
+.p-statut {
+  border: 1px solid #754c29;
+  border-radius: 6px;
+  text-align: right;
+  display: block;
+  float: right;
+  padding: 9px;
+  position: absolute;
+  right: 13px;
+}
+
+.list {
+  background: rgba(241, 229, 216, 0.5);
+  box-shadow: 0px 4.10701px 4.10701px rgb(0 0 0 / 4%);
+  border-radius: 4.71612px;
+  margin-top: 64px;
+  margin-bottom: -40px;
+
+  p {
+    margin-left: -20px;
+    width: 250px !important;
+  }
+}
+
+p > span {
+  display: block;
+  margin: 10px;
+  margin-right: 64px;
+  font-weight: 500;
+  font-size: 15.4013px;
+  line-height: 19px;
+  color: #754c29;
+  width: max-content;
+}
+
+.span-superificie {
+  margin-left: 33px !important;
+}
+
+.span-provider {
+  margin-left: 66px !important;
+}
+
+.text-muted {
+  font-size: 12.321px !important;
+  line-height: 15px !important;
+  width: -webkit-fill-available !important;
+}

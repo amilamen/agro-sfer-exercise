@@ -1,0 +1,65 @@
+<div class="menu" (click)="menuClicked($event)">
+  <div class="main-menu">
+    <perfect-scrollbar class="scroll" [config]="{ suppressScrollX: true }">
+      <ul class="list-unstyled">
+        <li
+          *ngFor="let item of menuItems"
+          [ngClass]="{
+            active:
+              (selectedParentMenu === item.to && viewingParentMenu === '') ||
+              viewingParentMenu === item.to
+          }"
+        >
+          <a
+            *ngIf="item.newWindow"
+            [href]="item.to"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              [src]="
+                (selectedParentMenu === item.to && viewingParentMenu === '') ||
+                viewingParentMenu === item.to
+                  ? item.icon
+                  : item.iconEmpty
+              "
+            />{{ item.label  }}</a
+          >
+          <a
+            *ngIf="!item.newWindow && item.subs && item.subs.length > 0"
+            (click)="openSubMenu($event, item); (false)"
+            [href]="item.to"
+          >
+            <img
+              [src]="
+                (selectedParentMenu === item.to && viewingParentMenu === '') ||
+                viewingParentMenu === item.to
+                  ? item.icon
+                  : item.iconEmpty
+              "
+            />
+            {{ item.label  }}</a
+          >
+          <a
+            *ngIf="
+              !item.newWindow &&
+              (!item.subs || (item.subs && item.subs.length === 0))
+            "
+            (click)="changeSelectedParentHasNoSubmenu(item.to); (false)"
+            [routerLink]="item.to"
+          >
+            <img
+              [src]="
+                (selectedParentMenu === item.to && viewingParentMenu === '') ||
+                viewingParentMenu === item.to
+                  ? item.icon
+                  : item.iconEmpty
+              "
+            />
+            {{ item.label  }}</a
+          >
+        </li>
+      </ul>
+    </perfect-scrollbar>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+h6 {
+  font-weight: bolder;
+  margin-bottom: 22px;
+}
+
+h6:nth-child(5) {
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 13px;
+  line-height: 40px;
+}
+
+.content {
+  font-size: 15px;
+  font-weight: bolder;
+  margin-top: 8px;
+  display: block;
+  margin-left: 0px;
+}
+
+.col-4 {
+  margin-bottom: 12px;
+}
+
+.col-1 {
+  margin-top: 10px;
+  margin-bottom: 12px;
+  margin-left: -26px;
+}
+
+.col-2 {
+  margin-top: 10px;
+  margin-bottom: 12px;
+  margin-left: -26px;
+}
+
+p:nth-child(4) {
+  margin-bottom: 68px;
+}
+
+.flag-red {
+  background: #d81a1a;
+}

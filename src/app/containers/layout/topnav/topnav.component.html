@@ -1,0 +1,65 @@
+<nav class="navbar fixed-top">
+  <div class="d-flex align-items-center navbar-left">
+    <a
+      (click)="
+        menuButtonClick(
+          $event,
+          sidebar.menuClickCount,
+          sidebar.containerClassnames
+        );
+        (false)
+      "
+      href="javascript:;"
+      class="menu-button d-none d-md-block"
+    >
+      <img src="../../../../assets/icons/ic_menu_48px.svg" alt="" srcset="" />
+    </a>
+
+    <a
+      (click)="mobileMenuButtonClick($event, sidebar.containerClassnames)"
+      href="javascript:;"
+      class="menu-button-mobile d-xs-block d-sm-block d-md-none"
+    >
+      <img src="../../../../assets/icons/ic_menu_48px.svg" alt="" srcset="" />
+    </a>
+
+    <div>
+      <img src="assets/logos/logo.png" alt="" />
+    </div>
+
+    <a href="javascript:;" class="menu-button d-none d-md-block">
+      <img src="../../../../assets/icons/ic_apps_48px.svg" alt="" srcset="" />
+    </a>
+  </div>
+
+  <div class="navbar-right">
+    <div class="header-icons d-inline-block align-middle">
+      <div class="position-relative d-inline-block">
+        <div dropdown>
+          <button
+            id="button-basic"
+            dropdownToggle
+            type="button"
+            id="notificationButton"
+            class="header-icon btn btn-empty"
+          >
+            <img
+              src="assets/icons/ic_notifications_48px.svg"
+              alt=""
+              srcset=""
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="user d-inline-block" dropdown>
+      <button class="btn btn-empty p-0" type="button" dropdownToggle>
+        <span class="name">John Totti</span>
+        <span>
+          <img alt="Profile Picture" src="assets/img/john_totti.png" />
+        </span>
+      </button>
+    </div>
+  </div>
+</nav>

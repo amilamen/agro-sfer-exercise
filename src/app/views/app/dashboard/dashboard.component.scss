@@ -1,0 +1,207 @@
+.card-farmer-stats {
+  background-color: #754c29;
+  height: 162px;
+}
+
+.card-mapping-stats {
+  background-color: white;
+  height: 162px;
+
+  .list-thumbnail-letters {
+    background: white !important;
+  }
+}
+
+.card-farmers-gender-piechart {
+  height: 355px;
+  background: white;
+
+  @media (max-width: 922px) {
+    margin-top: 32px;
+  }
+}
+
+.card-farmer-stats-mt {
+  margin-top: 68px;
+}
+
+.card-farmers-distribution {
+  height: 519px;
+}
+
+.div-date {
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  width: 200px;
+
+  input {
+    color: #754c29;
+  }
+
+  i {
+    display: block;
+    position: absolute;
+    right: 6px;
+    top: 8px;
+  }
+}
+
+.p-farmer-text {
+  margin-top: 8px;
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 12px;
+}
+
+.p-farmers-number {
+  color: white !important;
+  font-size: 15px !important;
+  line-height: 28.29px !important;
+  display: block;
+  position: absolute;
+  top: 31px;
+  left: 12px;
+}
+
+.p-farmer-active-text {
+  display: block;
+  margin-top: 10px;
+  color: white;
+  font-weight: lighter;
+  font-size: 18px;
+  margin-left: 12px;
+}
+
+.p-farmers-active-number {
+  color: white !important;
+  font-size: 15px !important;
+  line-height: 28.29px !important;
+  font-weight: bolder;
+  margin-left: 12px;
+}
+
+.p-mapping-text {
+  margin-top: 8px;
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 12px;
+}
+
+.p-mapping-number {
+  color: black !important;
+  font-size: 15px !important;
+  line-height: 28.29px !important;
+  display: block;
+  position: absolute;
+  top: 31px;
+  left: 12px;
+}
+
+.p-exploiting-text {
+  display: block;
+  margin-top: 78px;
+  color: black;
+  font-weight: lighter;
+  font-size: 15px;
+  margin-left: -16px;
+}
+
+.p-exploiting-number {
+  color: black !important;
+  font-size: 15px !important;
+  line-height: 28.29px !important;
+  font-weight: bolder;
+  margin-left: -16px;
+}
+
+.img-farmer {
+  width: 45.63px;
+  height: 45.63px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 14px;
+}
+
+.img-map {
+  width: 45.63px;
+  height: 45.63px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background-color: #fff;
+}
+
+.h6-gender-distribution-text {
+  display: block;
+  position: absolute;
+  top: -17px;
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+  left: 4px;
+}
+
+.chart-distribution {
+  margin-top: 38px;
+  display: block;
+}
+
+.h6-age-gender-text {
+  margin-top: -14px;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 36px;
+
+  @media (max-width: 360px) {
+    font-size: medium;
+  }
+}
+
+.h1-profile-stat > p:nth-child(1) {
+  font-size: inherit;
+  text-align: center;
+  color: #754c29;
+}
+
+.h1-profile-stat > p:nth-child(2) {
+  font-size: large !important;
+  text-align: center;
+}
+
+.h1-profile-stat > span {
+  display: block;
+  position: absolute;
+  right: 27px;
+  top: 50px;
+  font-size: large;
+  color: #4fa103;
+  font-weight: bolder;
+
+  @media (max-width: 360px) {
+    display: block;
+    position: absolute;
+    right: 54px;
+    top: 42px;
+    font-size: large;
+    color: #4fa103;
+    font-weight: bolder;
+  }
+}
+
+.icon-red {
+  color: #d81a1a;
+}
