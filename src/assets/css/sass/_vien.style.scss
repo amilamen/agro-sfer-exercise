@@ -2072,7 +2072,9 @@ a.btn-secondary:not([href]):not([tabindex]) {
 
     @include respond-below(sm) {
       img {
-        width: 30px;
+        width: 48px;
+        min-height: 48px;
+        height: 48px;
       }
 
       margin-left: initial;
